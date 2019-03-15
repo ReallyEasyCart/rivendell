@@ -1,0 +1,22 @@
+// 
+// Rivendell SCSS
+// Learn scss: https://sass-lang.com/guide#topic-2
+// 
+
+// variables & mixins
+@import "vars";
+@import "mixins";
+
+// default styling such as fonts
+@import "base";
+
+// actual design / layout
+@import "layout/header";
+@import "layout/middle";
+@import "layout/footer";
+
+// specific modules
+@import "modules/modal"; // example module
+
+// specific pages, or groupings of pages
+@import "pages";
