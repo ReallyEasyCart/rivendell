@@ -8,9 +8,9 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     font-family: $default-font;
 }
-// font-awesome fallback should also use our custom font :) (e.g. header search button)
+// fork-awesome fallback should also use our custom font :) (e.g. header search button)
 .fa {
-    font-family: "FontAwesome", $default-font;
+    font-family: "ForkAwesome", $default-font;
 }
 
 body {
