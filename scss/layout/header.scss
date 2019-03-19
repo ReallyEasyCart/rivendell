@@ -44,6 +44,11 @@
     font-weight: normal;
 }
 
+// set a default max-width for the search bar
+#search-q {
+    max-width: 220px;
+}
+
 // Set the menu background color
 #header nav ul {
     background-color: $menu-bg-color;
@@ -54,6 +59,7 @@
     }
 
     #header .nav {
+        // by default in responsive-base the header was absolute positioned, we no longer need that so we'll make it static
         position: static;
     }
 
