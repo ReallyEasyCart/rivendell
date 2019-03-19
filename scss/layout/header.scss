@@ -28,25 +28,16 @@
     text-align: center;
 }
 
-// if header aside text gets too big, break the words
+// on cms it shows phone & email in the aside area
+// if header aside text gets too big for the screensize, break the words
 .header-aside-phone,
 .header-aside-email {
     word-break: break-word;
 }
 
-// Show the text in the nav icons
+// Show the text in the nav icons, undoing the style from responsive-base which hides this on small screens
 .nav-icon span {
     display: inline-block;
-}
-
-.header-slogan {
-    // reset slogan text to normal font weight
-    font-weight: normal;
-}
-
-// set a default max-width for the search bar
-#search-q {
-    max-width: 220px;
 }
 
 // Set the menu background color

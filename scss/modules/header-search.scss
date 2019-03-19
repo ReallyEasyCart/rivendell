@@ -1,0 +1,35 @@
+//
+// Redesign the search bar so the button is just an icon floating at he end of the input
+//
+
+// set a default max-width for the search bar
+#search-q {
+    width: 20em;
+    max-width: 100%;
+    padding-right: 2.5em; // to compensate for button's negative margin
+}
+// push the button over the search input
+.header-search form {
+    display: flex;
+    justify-content: center;
+}
+.header-search button {
+    width: 2.5em;
+    position: relative;
+    margin-left: -2.5em;
+    // hide the button background so the icon just hovers over the input
+    background: transparent;
+    border: none;
+
+    &:before {
+        color: #333;
+    }
+
+    @include breakpoint(sm) {
+        text-indent: -100px;
+
+        &:before {
+            margin-right: -150px;
+        }
+    }
+}
