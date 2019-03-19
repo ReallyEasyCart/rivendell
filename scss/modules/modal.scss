@@ -1,12 +1,13 @@
 // Modal window styling
 
-// // Modal window header design
-// .modal-window-header {
-//     background-color: $primary-color-light;
-//     color: #FFF;
-// }
-//
-// // close icon (force back to white)
-// .modal-window-header-close {
-//     color: #FFF;
-// }
+// Modal window header design
+.modal-window-header {
+    background-color: $primary-color;
+}
+
+// header text & close icon
+.modal-window-header,
+.modal-window-header-title,
+.modal-window-header-close {
+    color: $primary-color-text;
+}

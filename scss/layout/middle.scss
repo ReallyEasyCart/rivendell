@@ -1,0 +1,16 @@
+
+// Middle/main section of the page
+
+#middle {
+    background: $middle-bg-color;
+}
+
+#middle .layout-container-inner {
+    background: $main-bg-color;
+}
+
+// style images in ckeditor content by default to be inline-blocks
+.rec-user-content-ckeditor img,
+.blog-content-block img {
+    display: inline-block;
+}

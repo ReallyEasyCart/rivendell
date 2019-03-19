@@ -1,0 +1,75 @@
+
+// Outer header
+#header {
+    background: $header-bg-color;
+}
+
+// Links colors
+/* split out for links (else ie7 wouldnt inherit it) */
+#header,
+#header .h1,
+#header .h2,
+#header .h3,
+#header a {
+    color: $header-text-color;
+    text-decoration: none;
+}
+
+// center header content by default
+.header-logo {
+    display: block;
+    text-align: center;
+}
+.header-logo img {
+    display: inline-block;
+}
+.header-aside,
+.header-nav-icons {
+    text-align: center;
+}
+
+// if header aside text gets too big, break the words
+.header-aside-phone,
+.header-aside-email {
+    word-break: break-word;
+}
+
+// Show the text in the nav icons
+.nav-icon span {
+    display: inline-block;
+}
+
+.header-slogan {
+    // reset slogan text to normal font weight
+    font-weight: normal;
+}
+
+// Set the menu background color
+#header nav ul {
+    background-color: $menu-bg-color;
+}
+@include breakpoint (md) {
+    #header nav ul.nav-secondary {
+        background-color: transparent;
+    }
+
+    #header .nav {
+        position: static;
+    }
+
+    // undo centering header content
+    .header-logo,
+    .header-aside,
+    .header-nav-icons {
+        text-align: left;
+    }
+
+    // float the logo to the left & details or search box to the right
+    .header-logo {
+        float: left;
+    }
+    .header-aside {
+        float: right;
+    }
+}
+

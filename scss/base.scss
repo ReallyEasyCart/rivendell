@@ -24,32 +24,24 @@ h1, h2, h3,
     color: $headings-text-color;
 }
 
-// // buttons
-// @include buttons {
-//     background: $primary-color;
-//     border: 1px solid darken($primary-color, 5%);
-//     color: $primary-color-text;
-//
-//     &:hover {
-//         background: darken($primary-color, 5%);
-//         border: 1px solid darken($primary-color, 10%);
-//     }
-//
-//     &:active {
-//         background: darken($primary-color, 10%);
-//         border: 1px solid darken($primary-color, 15%);
-//     }
-// }
+// links
+a {
+    color: $primary-color;
+}
 
-// // headings
-// h1 {
-//     color: $secondary-text-color;
-// }
-// h2,
-// h3 {
-//     color: $primary-color-light;
-// }
-// // links
-// a {
-//     color: $primary-color;
-// }
+// buttons
+@include buttons {
+    background: $primary-color;
+    border: 1px solid darken($primary-color, 5%);
+    color: $primary-color-text;
+
+    &:hover {
+        background: darken($primary-color, 5%);
+        border: 1px solid darken($primary-color, 10%);
+    }
+
+    &:active {
+        background: darken($primary-color, 10%);
+        border: 1px solid darken($primary-color, 15%);
+    }
+}

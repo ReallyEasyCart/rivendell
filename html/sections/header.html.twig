@@ -1,0 +1,82 @@
+
+<!-- Header content -->
+<header id="header" class="layout-container" role="banner">
+    <div class="layout-container-inner clearfix">
+
+        <!-- Logo -->
+        <a class="header-logo" href="{{ directory }}">
+            {% if company.logo_image %}
+                <img src="{{ company.logo_image }}" alt="{{ company.name }}">
+            {% else %}
+                <span class="header-title h1">{{ company.name }}</span>
+                <span class="header-slogan h3">{{ company.slogan }}</span>
+            {% endif %}
+        </a>
+
+        <div class="header-aside">
+            {% if setup.is_cms %}
+
+                <!-- Phone number -->
+                <a href="tel:{{ company.phone_number }}" class="header-aside-phone h3">
+                    <i class="fa fa-phone"></i>
+                    {{ company.phone_number }}
+                </a>
+                <br>
+                <!-- Email -->
+                <a href="mailto:{{ company.email | safe_email }}" class="header-aside-email h3">
+                    <i class="fa fa-envelope"></i>
+                    {{ company.email | safe_email }}
+                </a>
+
+            {% else %}
+
+                <!-- Search -->
+                <div class="header-search search">
+                    <form action="/search" method="get">
+                        <input type="search" name="q" id="search-q" placeholder="Search this site...">
+                        <button type="submit" class="fa fa-search"> Search</button>
+                    </form>
+                </div>
+
+            {% endif %}
+        </div>
+
+        <!-- nav icons -->
+        <div class="header-nav-icons">
+
+            {# when shop mode is enabled, the nav auto expands both the nav and the search #}
+            <a data-toggle=".header-nav" class="nav-icon nav-toggle-icon">
+                <i class="fa fa-bars fa-lg"></i>
+                <span>Menu</span>
+            </a>
+
+        </div>
+
+        <!-- Main menu / nav -->
+        <nav class="header-nav nav nav-sub-indicators nav-sub-indicator-arrows" id="navigation" role="navigation">
+            <ul class="nav-primary">{{ header.menu }}</ul>
+
+            {% if setup.is_shop %}
+                <!-- secondary nav for view cart, checkout, login, register etc. -->
+                <ul class="nav-secondary nav-stripped nav-line-separators pull-right-md">
+                    <li><a href="/shop.php?p=view_cart" class="open-cart">View Cart
+                        <span data-format="(%d)" class="cart-qty">{% if cart.qty != 0 %}({{ cart.qty }}){% endif %}</span>
+                    </a></li>
+                    <li><a href="/checkout.php">Checkout</a></li>
+                    <li><a href="/customer_home.php?p=previous_buys">Track Orders</a></li>
+
+                    {% if user.is_logged_in %}
+                        <li><a href="/admin/">Your Account</a></li>
+                        <li><a href="/pages/logout.php">Logout</a></li>
+                    {% else %}
+                        <li><a href="/login.php">Login</a></li>
+                        <li><a href="/register.php">Register</a></li>
+                    {% endif %}
+
+                </ul>
+            {% endif %}
+
+        </nav>
+
+    </div>
+</header>
