@@ -1,0 +1,110 @@
+
+<!-- Footer content -->
+<footer id="footer" role="contentinfo" class="layout-container">
+    <div class="layout-container-inner clearfix">
+    
+        <!-- social links -->
+        <div class="footer-social-links">
+
+            {% if setup.show_facebook %}
+                <a href="{{ setup.facebook_url }}" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </a>
+            {% endif %}
+
+            {% if setup.show_twitter %}
+                <a href="{{ setup.twitter_url }}" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </a>
+            {% endif %}
+
+            {% if setup.show_youtube %}
+                <a href="{{ setup.youtube_url }}" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                </a>
+            {% endif %}
+
+            {% if setup.show_linkedin %}
+                <a href="{{ setup.linkedin_url }}" class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </a>
+            {% endif %}
+
+            {# <a href="/feed.rss" class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+            </a>
+
+            <a href="/sitemap.xml" class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
+            </a> #}
+
+            <a href="#header" title="Back to top" class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+            </a>
+
+            <a href="{{ footer.contact_page }}" class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </a>
+
+        </div>
+
+        <div class="footer-links">
+            <ul class="nav nav-stripped nav-line-separators">
+                {{ footer.menu }}
+            </ul>
+        </div>
+
+        <hr>
+    
+        <!-- address -->
+        <div class="footer-address">
+            {{ company.address_line }}
+            <br>Registered in England and Wales
+            - Company Number: {{ company.company_reg_num }}
+            - VAT Number: {{ company.vat_num }}
+        </div>
+
+        <p>
+            Telephone:
+            <a href="tel:{{ company.phone_number }}">
+                <i class="fa fa-phone"></i>
+                {{ company.phone_number }}
+            </a>
+            | Email: 
+            <a href="mailto:{{ company.email | safe_email }}">
+                <i class="fa fa-envelope"></i>
+                {{ company.email | safe_email }}
+            </a>
+        </p>
+
+        <!-- copyright notice -->
+        <p>
+            <small>
+                {{ COPYRIGHT_L }} {{ date.year }} {{ company.name }}. {{ FOOTER_ACM_LINE_1 }} {{ FOOTER_ACM_LINE_2 }}
+                <br>
+                {% if TERMS_POLICY_URL %}<a href="{{ TERMS_POLICY_URL }}">Terms &amp; Conditions</a> |{% endif %}
+                {% if PRIVACY_POLICY_URL %}<a href="{{ PRIVACY_POLICY_URL }}">Privacy Policy</a> |{% endif %}
+                <a title="Review your cookie settings with our site." onclick="CookiePolicy.show(); return false;" href="#">Cookie Policy &amp; Settings</a>
+            </small>
+        </p>
+
+        {# Card icons #}
+        {% if setup.is_shop %}
+            <p class="footer-ecommerce-card-icons">
+                <i class="fa fa-cc-paypal"></i>
+                <i class="fa fa-cc-visa"></i>
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-credit-card-alt"></i>
+            </p>
+        {% endif %}
+
+    </div>
+</footer>

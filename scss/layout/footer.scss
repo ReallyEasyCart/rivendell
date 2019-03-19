@@ -2,14 +2,25 @@
 /* Footer */
 #footer {
     background-color: $footer-bg-color;
+    text-align: center;
 }
 #footer,
 #footer a,
 #footer h1,
 #footer h2,
-#footer h3,
-#footer h4,
-#footer h5,
-#footer h6 {
+#footer h3 {
     color: $footer-text-color;
+}
+
+// remove the default darker background colour responsive-base gives by default
+.footer-social-links, .footer-copyright {
+    background-color: transparent;
+}
+
+// show the footer links side by side as inline-blocks
+.footer-links,
+.footer-links li,
+.footer-links ul,
+.footer-links li a {
+    display: inline-block;
 }
