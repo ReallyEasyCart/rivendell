@@ -73,3 +73,17 @@
     }
 }
 
+// when flexbox available
+.flexbox {
+    @include breakpoint (md) {
+        .nav-primary {
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav-primary li {
+            flex: 1;
+            text-align: center;
+            transition: background-color .3s;
+        }
+    }
+}
