@@ -3,8 +3,10 @@
 // https://robots.thoughtbot.com/sass-variables
 //
 
-$default-font: Arial, sans-serif;
-$heading-font: $default-font;
+$default-font: 'Open Sans', sans-serif;
+$heading-font: 'Open Sans', sans-serif;
+$default-text-color: #444;
+$headings-text-color: #000000;
 
 // e.g.
 // Material design style vars

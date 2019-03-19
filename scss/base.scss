@@ -13,9 +13,15 @@ html, button, input, select, textarea,
     font-family: "FontAwesome", $default-font;
 }
 
+body {
+    color: $default-text-color;
+}
+
 // heading fonts
-h1, h2, h3 {
+h1, h2, h3,
+.h1, .h2, .h3 {
     font-family: $heading-font;
+    color: $headings-text-color;
 }
 
 // // buttons
