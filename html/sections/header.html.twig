@@ -44,7 +44,15 @@
         <!-- nav icons -->
         <div class="header-nav-icons">
 
-            {# when shop mode is enabled, the nav auto expands both the nav and the search #}
+            <!-- Cart -->
+            <div class="nav-icon header-cart cart-show-if-not-empty" {% if cart.qty == 0 %}style="display:none;"{% endif %}>
+                <a href="/shop.php?p=view_cart" class="open-cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <strong class="cart-qty">{{ cart.qty }}</strong> items in cart
+                </a>
+                - <a href="/checkout.php">Checkout</a>
+            </div>
+
             <a data-toggle=".header-nav" class="nav-icon nav-toggle-icon">
                 <i class="fa fa-bars fa-lg"></i>
                 <span>Menu</span>
