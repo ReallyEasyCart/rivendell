@@ -2,12 +2,19 @@
 .flexbox {
     @include breakpoint (md) {
         .nav-flexbox {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -ms-flex-pack: distribute;
             justify-content: space-around;
         }
         .nav-flexbox li {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
             flex: 1;
             text-align: center;
+            -webkit-transition: background-color .3s;
+            -o-transition: background-color .3s;
             transition: background-color .3s;
         }
     }
