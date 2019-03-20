@@ -2,64 +2,11 @@
 <!-- Footer content -->
 <footer id="footer" role="contentinfo" class="layout-container">
     <div class="layout-container-inner clearfix">
-    
+
         <!-- social links -->
         <div class="footer-social-links">
 
-            {% if setup.show_facebook %}
-                <a href="{{ setup.facebook_url }}" class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </a>
-            {% endif %}
-
-            {% if setup.show_twitter %}
-                <a href="{{ setup.twitter_url }}" class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </a>
-            {% endif %}
-
-            {% if setup.show_instagram %}
-                <a href="{{ setup.instagram_url }}" class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                </a>
-            {% endif %}
-
-            {% if setup.show_youtube %}
-                <a href="{{ setup.youtube_url }}" class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-                </a>
-            {% endif %}
-
-            {% if setup.show_linkedin %}
-                <a href="{{ setup.linkedin_url }}" class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </a>
-            {% endif %}
-
-            {# <a href="/feed.rss" class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-            </a>
-
-            <a href="/sitemap.xml" class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
-            </a> #}
-
-            <a href="#header" title="Back to top" class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
-            </a>
-
-            <a href="{{ footer.contact_page }}" class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-            </a>
+            {% include "html/sections/social-icons.html.twig" %}
 
         </div>
 
@@ -70,7 +17,7 @@
         </div>
 
         <hr>
-    
+
         <!-- address -->
         <div class="footer-address">
             {{ company.address_line }}
@@ -85,7 +32,7 @@
                 <i class="fa fa-phone"></i>
                 {{ company.phone_number }}
             </a>
-            | Email: 
+            | Email:
             <a href="mailto:{{ company.email | safe_email }}">
                 <i class="fa fa-envelope"></i>
                 {{ company.email | safe_email }}
