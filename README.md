@@ -8,7 +8,7 @@ Rivendell is a starter responsive template for REC, it comes with:
 - SCSS/Sass support
 - A clean organised structure for your code
 - owlCarousel2 pre installed
-- Open Sans font by default
+- Lato font by default
 - Cleaner default Header & Footer layouts
 - Ckeditor content areas now display images as inline-blocks by default
 - & more, have a browse round the files to see
