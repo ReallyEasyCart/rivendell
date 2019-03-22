@@ -14,6 +14,8 @@
         position: relative; // default in responsive-base is absolute but we want relative
         left: 0;
         right: 0;
+        // clear floats by default
+        clear: both;
     }
     #header nav ul.nav-secondary {
         // menu on mobile has a background colour, on desktop we want to remove that
@@ -22,7 +24,7 @@
         // responsive-base used negative margins, but absolute position should adapt better to changes to the menu height
         position: absolute;
         margin-top: 0;
-        top: .5em;
+        top: -1.6em;
         right: 0;
     }
 }
