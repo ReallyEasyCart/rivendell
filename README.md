@@ -15,7 +15,7 @@ Rivendell is a starter responsive template for REC, it comes with:
 - Cleaner default Header (easies to move parts around and no more default height set)
 - Flexable nav by default (can easily be removed by removing the nav-flexible class in the header file)
 - Simpler centered Footer layout
-- Ckeditor content areas now display images as inline-blocks by default
+- Ckeditor content areas now display images as inline-blocks by default and adds margin to sides when floated
 - Community driven - you can fork & make changes, or propose changes to us by opening an issue or pull request
 - & more, have a browse round the files to see
 

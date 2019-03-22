@@ -15,3 +15,13 @@
 .blog-content-block img {
     display: inline-block;
 }
+
+// also for floated imags in ckeditor, add some nice margins to the text
+.rec-user-content-ckeditor img[style*="float: left;"],
+.blog-content-block img[style="float: left;"] {
+    margin-right: 1em;
+}
+.rec-user-content-ckeditor img[style*="float: right;"],
+.blog-content-block img[style="float: right;"] {
+    margin-left: 1em;
+}
