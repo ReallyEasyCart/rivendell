@@ -1,3 +1,4 @@
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Rivendell_illustration.jpg/240px-Rivendell_illustration.jpg" align="right">
 
 # Rivendell REC template
 
