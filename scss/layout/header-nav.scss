@@ -1,0 +1,28 @@
+//
+// Nav layout
+//
+.nav-icon span {
+    display: inline-block;
+}
+
+// Set the menu background color
+#header nav ul {
+    background-color: $menu-bg-color;
+}
+@include breakpoint (md) {
+    #header .nav {
+        position: relative; // default in responsive-base is absolute but we want relative
+        left: 0;
+        right: 0;
+    }
+    #header nav ul.nav-secondary {
+        // menu on mobile has a background colour, on desktop we want to remove that
+        background-color: transparent;
+        // show the secondary nav just above the primary one
+        // responsive-base used negative margins, but absolute position should adapt better to changes to the menu height
+        position: absolute;
+        margin-top: 0;
+        top: .5em;
+        right: 0;
+    }
+}

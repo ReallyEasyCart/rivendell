@@ -35,24 +35,7 @@
     word-break: break-word;
 }
 
-// Show the text in the nav icons, undoing the style from responsive-base which hides this on small screens
-.nav-icon span {
-    display: inline-block;
-}
-
-// Set the menu background color
-#header nav ul {
-    background-color: $menu-bg-color;
-}
 @include breakpoint (md) {
-    #header nav ul.nav-secondary {
-        background-color: transparent;
-    }
-
-    #header .nav {
-        // by default in responsive-base the header was absolute positioned, we no longer need that so we'll make it static
-        position: static;
-    }
 
     // undo centering header content
     .header-logo,

@@ -36,6 +36,7 @@ Rivendell is a starter responsive template for REC, it comes with:
     │   ├── layout                      # Layout / design files for site
     │   │   ├── footer.scss
     │   │   ├── header.scss
+    │   │   ├── header-nav.scss
     │   │   └── middle.scss
     │   ├── mixins.scss                 # Useful functions to help build faster
     │   ├── modules
