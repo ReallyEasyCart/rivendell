@@ -15,6 +15,13 @@ html, button, input, select, textarea,
 
 body {
     color: $default-text-color;
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+}
+
+// max width for site layout container
+.layout-container-inner {
+    max-width: $layout-max-width;
 }
 
 // heading fonts

@@ -3,15 +3,22 @@
 // https://robots.thoughtbot.com/sass-variables
 //
 
+// fonts
 $default-font: 'Lato', sans-serif;
 $heading-font: 'Lato', sans-serif;
 $default-text-color: #444;
 $headings-text-color: #000000;
+$default-font-size: 15px;
+$default-line-height: 1.5;
+
+// max width for site layout container
+$layout-max-width: 1190px;
 
 // The primary color is mainly used for buttons & links
 $primary-color: #00675b;
 $primary-color-text: #FFFFFF;
 
+// colors
 $body-bg-color: #FFF;
 
 $header-bg-color: #009688;
