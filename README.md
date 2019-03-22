@@ -1,16 +1,22 @@
 
 # Rivendell REC template
 
+[View live demo](https://www.andrew.recds12.co.uk/)
+
 Rivendell is a starter responsive template for REC, it comes with:
 
 - Pre-installed on new sites **- coming soon**
 - Fully responsive, extending the responsive-base template just like responsive-site template
 - SCSS/Sass support
 - A clean organised structure for your code
+- Uses a vars.scss file to manage variables in your code (replacing the use of edit colours in admin)
 - owlCarousel2 pre installed
-- Lato font by default
-- Cleaner default Header & Footer layouts
+- Lato font by default with vars to change this along with default font size and line height
+- Cleaner default Header (easies to move parts around and no more default height set)
+- Flexable nav by default (can easily be removed by removing the nav-flexible class in the header file)
+- Simpler centered Footer layout
 - Ckeditor content areas now display images as inline-blocks by default
+- Community driven - you can fork & make changes, or propose changes to us by opening an issue or pull request
 - & more, have a browse round the files to see
 
 ### Folder structure:
@@ -47,3 +53,13 @@ Rivendell is a starter responsive template for REC, it comes with:
     │   ├── site.scss                   # All your SCSS imports
     │   └── vars.scss                   # Define default colours, fonts etc.
     └── template_config.json
+
+### Screenshots
+
+![](https://www.andrew.recds12.co.uk/userfiles/rivendell-screenshots/rivendell-desktop.png)
+
+![](https://www.andrew.recds12.co.uk/userfiles/rivendell-screenshots/rivendell-desktop-footer.png)
+
+![](https://www.andrew.recds12.co.uk/userfiles/rivendell-screenshots/rivendell-mobile-top.png)
+
+![](https://www.andrew.recds12.co.uk/userfiles/rivendell-screenshots/rivendell-cart-desktop.png)
