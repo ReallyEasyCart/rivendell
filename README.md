@@ -20,7 +20,7 @@ Rivendell is a starter responsive template for REC, it comes with:
 - Community driven - you can fork & make changes, or propose changes to us by opening an issue or pull request
 - & more, have a browse round the files to see
 
-### Also check out our [alternative components repo](https://github.com/ReallyEasyCart/rec-rivendell-components) for other header & footer designs!
+### Also check out our [alternative components repo](https://github.com/ReallyEasyCart/rivendell-components) for other header & footer designs!
 
 ### Folder structure:
 
