@@ -11,3 +11,12 @@
 .modal-window-header-close {
     color: $primary-color-text;
 }
+
+// modal text
+.modal-window-body,
+.modal-window-body h1,
+.modal-window-body h2,
+.modal-window-body h3,
+.modal-window-body p {
+    color: #000;
+}
