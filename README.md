@@ -6,7 +6,7 @@
 
 Rivendell is a starter responsive template for REC, it comes with:
 
-- Pre-installed on new sites **- coming soon**
+- Pre-installed on new sites
 - Fully responsive, extending the responsive-base template just like responsive-site template
 - SCSS/Sass support
 - A clean organised structure for your code
