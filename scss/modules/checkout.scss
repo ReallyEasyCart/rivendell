@@ -1,0 +1,17 @@
+
+/* 
+    Checkout Button
+    - similar to default button, but a larger button at the bottom of the checkout screen
+*/
+.rec-body-checkoutlayout .order_checkout_button {
+    // checkout sets these to system colours by default so we just want to override back to our normal button colours via the primary colors :)
+    background-color: $primary-color;
+    border: 4px solid darken($primary-color, 5%);
+}
+.rec-body-checkoutlayout .order_checkout_button
+.rec-body-checkoutlayout .order_checkout_button a, .order_checkout_button a:link,
+.rec-body-checkoutlayout .order_checkout_button .title,
+.rec-body-checkoutlayout .order_checkout_button .sub {
+    // the checkout sets important here too so we have to fight fire with fire
+    color: $primary-color-text !important;
+}
