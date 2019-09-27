@@ -1,14 +1,14 @@
 // Modal window styling
 
 // Modal window header design
-.modal-window-header {
+.modal-window-inner .modal-window-header {
     background-color: $primary-color;
 }
 
 // header text & close icon
-.modal-window-header,
-.modal-window-header-title,
-.modal-window-header-close {
+.modal-window-inner .modal-window-header,
+.modal-window-inner .modal-window-header-title,
+.modal-window-inner .modal-window-header-close {
     color: $primary-color-text;
 }
 
