@@ -47,6 +47,34 @@
     </a>
 {% endif %}
 
+{% if setup.show_tiktok %}
+    <a href="{{ setup.tiktok_url }}" class="fa-stack fa-lg" title="Tiktok">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-tiktok fa-stack-1x fa-inverse"></i>
+    </a>
+{% endif %}
+
+{% if setup.show_snapchat %}
+    <a href="{{ setup.snapchat_url }}" class="fa-stack fa-lg" title="Snapchat">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
+    </a>
+{% endif %}
+
+{% if setup.show_whatsapp %}
+    <a href="{{ setup.whatsapp_url }}" class="fa-stack fa-lg" title="Whatsapp">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+    </a>
+{% endif %}
+
+{% if setup.show_vimeo %}
+    <a href="{{ setup.vimeo_url }}" class="fa-stack fa-lg" title="Vimeo">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-vimeo fa-stack-1x fa-inverse"></i>
+    </a>
+{% endif %}
+
 {# <a href="/feed.rss" class="fa-stack fa-lg" title="RSS feed XML">
     <i class="fa fa-circle fa-stack-2x"></i>
     <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
