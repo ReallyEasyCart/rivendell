@@ -1,0 +1,9 @@
+
+// responsive youtube iframes
+// lets you insert youtube iframes responsively without having to wrap them in a div for .video-container or .iframe-container
+iframe[src^="https://www.youtube"]:not(.video-container iframe):not(.iframe-container iframe) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
